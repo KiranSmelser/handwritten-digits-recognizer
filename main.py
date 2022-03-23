@@ -7,6 +7,11 @@ import numpy as np
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import confusion_matrix
 
+def accuracy(confusion_matrix):
+    diagonal = confusion_matrix.trace()
+    elements = confusion_matrix.sum()
+    return diagonal / elements
+
 def main():
     # Create training variables.
     x_train = mnist.train_images()
@@ -19,4 +24,10 @@ def main():
     x_test = x_test.reshape((-1, 28*28))
     x_train = x_train / 256
     x_test = x_test / 256
+    # Create model.
+    clf = MLPClassifier(solver='adam', activation='relu', hidden_layer_sizes=(64,64))
+    clf.fit(x_train, y_train)
+    predictions = clf.predict(x_test)
+    acc = confusion_matrix(y_test, predictions)
+    print(f"Accuracy: {accuracy(acc)}")
 main()
