@@ -3,13 +3,12 @@
 
 from PIL import Image
 
-def main():
-    img = Image.open("five-test.png")
+def image_to_byte():
+    img_name = input("Please enter file name: ").strip()
+    img = Image.open(img_name)
     raw_data = list(img.getdata())
-    print(raw_data)
     # Format image data.
     formatted_data = []
     for i in range(len(raw_data)):
         formatted_data.append(255 - raw_data[i][0])
-    print(formatted_data)
-main()
+    return formatted_data
