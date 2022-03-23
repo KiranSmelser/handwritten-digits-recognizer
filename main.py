@@ -1,4 +1,4 @@
-"""_summary_
+"""This program utilizes machine learning to determine which digit is present in an 28x28 pixel image file that contains a handwritten digit.
 """
 
 from PIL import Image
@@ -8,12 +8,16 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import confusion_matrix
 
 def accuracy(confusion_matrix):
+    """This fuction determines the accuracy of the created recognition model.
+    Arguments: confusion_matrix is an array of integers.
+    Returns: An accuracy score for the model.
+    """
     diagonal = confusion_matrix.trace()
     elements = confusion_matrix.sum()
     return diagonal / elements
 
 def main():
-    # Create training variables.
+    # Create training variables
     x_train = mnist.train_images()
     y_train = mnist.train_labels()
     # Create testing variables.

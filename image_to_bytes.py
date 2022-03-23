@@ -1,4 +1,4 @@
-"""_summary_
+"""This program converts the raw data of an image file to a list of bytes.
 """
 
 from PIL import Image
