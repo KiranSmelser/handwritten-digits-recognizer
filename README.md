@@ -13,35 +13,25 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+This program utilizes machine learning to determine which digit is present in an 28x28 pixel image file that contains a handwritten digit.
 
 
 ## Technologies Used
 - Python 3
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- sklearn
+- PIL
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+![Example screenshot](./five-test-result.png)
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
+Ensure the image file containing the handwritten digit is rescaled to 28x28 pixels.
 
 
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
+When prompted, enter the name of the formated image file and program will return the digit as well as the accuracy score of the model. 
 
 
 ## Project Status
