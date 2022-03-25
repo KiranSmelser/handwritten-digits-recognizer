@@ -20,6 +20,7 @@ This program utilizes machine learning to determine which digit is present in an
 - Python 3
 - sklearn
 - PIL
+- tkinter
 
 
 ## Screenshots
@@ -27,11 +28,11 @@ This program utilizes machine learning to determine which digit is present in an
 
 
 ## Setup
-Ensure the image file containing the handwritten digit is rescaled to 28x28 pixels.
+Ensure sklearn, PIL, and tkinter have been installed.
 
 
 ## Usage
-When prompted, enter the name of the formated image file and program will return the digit as well as the accuracy score of the model. 
+When run, the program will prompt the user to draw a digit within the box of the opened window. Once done, the user must press Control + s and the program will return the model's prediction as well as the accuracy percentage of the model. 
 
 
 ## Project Status
@@ -40,7 +41,7 @@ Project is: _complete_.
 
 ## Acknowledgements
 Give credit here.
-- This project was based on [this tutorial](https://www.example.com).
+- This project was adapted from [this tutorial](https://www.youtube.com/watch?v=pqNCD_5r0IU&list=WL&index=42).
 
 
 ## Contact
