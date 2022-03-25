@@ -42,7 +42,6 @@ Project is: _complete_.
 
 
 ## Acknowledgements
-Give credit here.
 - This project was adapted from [this tutorial](https://www.youtube.com/watch?v=pqNCD_5r0IU&list=WL&index=42).
 
 
