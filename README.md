@@ -24,7 +24,7 @@ This program utilizes machine learning to determine which digit is present in an
 
 
 ## Screenshots
-![Example screenshot](./five-test-result.png)
+![Example screenshot](./test-result.png)
 
 
 ## Setup
