@@ -34,6 +34,8 @@ Ensure sklearn, PIL, and tkinter have been installed.
 ## Usage
 When run, the program will prompt the user to draw a digit within the box of the opened window. Once done, the user must press Control + s and the program will return the model's prediction as well as the accuracy percentage of the model. 
 
+[Example video](./test-result.mp4)
+
 
 ## Project Status
 Project is: _complete_.
