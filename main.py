@@ -7,6 +7,7 @@ import numpy as np
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import confusion_matrix
 from image_to_bytes import image_to_byte
+from drawing_window import draw_with_mouse
 
 def accuracy(confusion_matrix):
     """This fuction determines the accuracy of the created recognition model.
@@ -34,13 +35,14 @@ def main():
     clf.fit(x_train, y_train)
     predictions = clf.predict(x_test)
     acc = confusion_matrix(y_test, predictions)
-    # Testing model with "five-test.png".
-    five = image_to_byte()
-    five = np.array(five)/256
-    five = five.reshape(1, -1)
-    p = clf.predict(five)
-    print(p[0])
+    # Predicts digit based on user input.
+    draw_with_mouse()
+    digit = image_to_byte()
+    digit = np.array(digit)/256
+    digit = digit.reshape(1, -1)
+    p = clf.predict(digit)
+    print(f"Prediction: {p[0]}")
     # Accuracy of recognizer.
-    print(f"Accuracy: {accuracy(acc)}")
+    print(f"Accuracy: {accuracy(acc)*100}%")
 
 main()
