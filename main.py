@@ -45,4 +45,5 @@ def main():
     # Accuracy of recognizer.
     print(f"Accuracy: {accuracy(acc)*100}%")
 
-main()
+if __name__ == "__main__":
+    main()
